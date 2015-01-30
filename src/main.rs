@@ -5,6 +5,7 @@ mod pr3;
 mod pr4;
 mod pr5;
 mod pr6;
+mod pr7;
 
 fn main() {
     println!("Problem 1 answer: {}", pr1::run());
@@ -13,4 +14,5 @@ fn main() {
     println!("Problem 4 answer: {}", pr4::run());
     println!("Problem 5 answer: {}", pr5::run());
     println!("Problem 6 answer: {}", pr6::run());
+    println!("Problem 7 answer: {}", pr7::run());
 }
