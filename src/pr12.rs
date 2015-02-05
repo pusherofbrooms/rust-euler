@@ -8,7 +8,6 @@
 /// We don't need to search further than sqrt of the number.
 
 use std::num;
-use std::iter;
 
 pub fn run () -> i32 {
     let maxdiv = 500;
@@ -20,7 +19,6 @@ pub fn run () -> i32 {
         tri += 1;
         sum += tri;
         let mut factors = 0;
-        let mut tmp = sum;
         let root = num::Float::floor(num::Float::sqrt(sum as f64)) as i32;
         
         for x in (2..root+1) {

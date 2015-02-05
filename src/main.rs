@@ -1,4 +1,7 @@
 /// Project Euler problems in rust.
+extern crate num;
+// use num::bigint;
+
 mod pr1;
 mod pr2;
 mod pr3;
@@ -11,6 +14,7 @@ mod pr9;
 mod pr10;
 mod pr11;
 mod pr12;
+mod pr13;
 
 fn main() {
     println!("Problem 1 answer: {}", pr1::run());
@@ -25,4 +29,5 @@ fn main() {
     println!("Problem 10 answer: {}", pr10::run());
     println!("Problem 11 answer: {}", pr11::run());
     println!("Problem 12 answer: {}", pr12::run());
+    println!("Problem 13 answer: {}", pr13::run());
 }
