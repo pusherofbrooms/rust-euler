@@ -16,8 +16,13 @@ pub fn run () -> BigInt {
     let sizex = 20;
     let sizey = 20;
     let steps = sizex+sizey;
+    // apparently we can't assign an integer to a BigInt
+    // so we have to use this awkward construct.
     let mut bigfact:BigInt = One::one();
     let mut smallfact:BigInt = One::one();
+
+    // sort the smallest and largest side. A :? operator
+    // might be nice here.
     let mut low;
     let mut high;
     if sizex > sizey {
@@ -27,11 +32,12 @@ pub fn run () -> BigInt {
         high=sizey;
         low=sizex;
     }
-    //calculate smaller factorial
+
+    // calculate smaller factorial
     for x in (2..low+1) {
         smallfact = smallfact * x.to_bigint().unwrap();
     }
-    //calculate the big factorial less the larger of the two sizes
+    // calculate the big factorial less the larger of the two sizes
     for x in (steps-high+1..steps+1){
         bigfact = bigfact * x.to_bigint().unwrap();
     }
