@@ -4,8 +4,6 @@
 /// The approach from problem 7 takes several minutes.
 /// We'll see if we can do better.
 
-use std::num;
-
 pub fn run () -> i64 {
     // prime the pump
     let mut candidate = 3;
@@ -35,7 +33,7 @@ fn isprime (n:i32) -> bool {
     else if n < 9 {return true;}
     else if n % 3 == 0 {return false;}
     else {
-        let root = num::Float::floor(num::Float::sqrt(n as f64)) as i32;
+        let root = f64::floor(f64::sqrt(n as f64)) as i32;
         // 6*k (+/-) 1 and all factors less than sqrt(n)
         let mut k = 5;
         while k <= root {
