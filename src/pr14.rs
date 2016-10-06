@@ -11,7 +11,7 @@
 pub fn run () -> i32 {
     let mut highest_terms = 1;
     let mut highest_num = 1;
-    for x in (2 .. 1000001) {
+    for x in 2 .. 1000001 {
         let terms = collatz_terms(x as i64);
         if terms > highest_terms {
             highest_terms = terms;

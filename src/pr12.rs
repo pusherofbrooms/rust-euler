@@ -19,7 +19,7 @@ pub fn run () -> i32 {
         let mut factors = 0;
         let root = f64::floor(f64::sqrt(sum as f64)) as i32;
         
-        for x in (2..root+1) {
+        for x in 2..root+1 {
             if sum % x == 0 {
                 factors +=2
             }

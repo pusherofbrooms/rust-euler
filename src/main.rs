@@ -1,6 +1,5 @@
 /// Project Euler problems in rust.
 extern crate num;
-// use num::bigint;
 
 mod pr1;
 mod pr2;

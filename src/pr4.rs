@@ -4,8 +4,8 @@
 pub fn run () -> i32 {
     let mut highest_palindrome:i32=1;
     // too lazy to count from 100 to 999 since 900 to 999 likely has some palindromes
-    for x in (900..999){
-        for y in (x..999){
+    for x in 900..999{
+        for y in x..999{
             let product = x*y;
             if ispalindrome(product) && product > highest_palindrome {
                 highest_palindrome = product;

@@ -23,8 +23,8 @@ pub fn run () -> BigInt {
 
     // sort the smallest and largest side. A :? operator
     // might be nice here.
-    let mut low;
-    let mut high;
+    let low;
+    let high;
     if sizex > sizey {
         high=sizex;
         low=sizey;
@@ -34,11 +34,11 @@ pub fn run () -> BigInt {
     }
 
     // calculate smaller factorial
-    for x in (2..low+1) {
+    for x in 2..low+1 {
         smallfact = smallfact * x.to_bigint().unwrap();
     }
     // calculate the big factorial less the larger of the two sizes
-    for x in (steps-high+1..steps+1){
+    for x in steps-high+1..steps+1{
         bigfact = bigfact * x.to_bigint().unwrap();
     }
     bigfact / smallfact

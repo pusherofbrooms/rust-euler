@@ -70,7 +70,7 @@ pub fn run () -> i64 {
                 3,6,0,0,8,2,3,2,5,7,5,3,0,4,2,0,7,5,2,9,6,3,4,5,0];
 
     let mut highest_prod:i64 = 0;
-    for i in (0..bignum.len()-(seq-1)) {
+    for i in 0..bignum.len()-(seq-1) {
         let mut prod:i64 = 1;
         for j in bignum[i..i+seq].iter() {
             prod *= *j;

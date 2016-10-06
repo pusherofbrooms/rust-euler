@@ -19,7 +19,7 @@ fn sq_of_sum (n:f32) -> i32 {
 fn sum_of_sq (n:i32) -> i32 {
     // I only know the naive way to do this
     let mut sum=0;
-    for i in (1..n+1) {
+    for i in 1..n+1 {
         sum += i*i;
     }
     sum
